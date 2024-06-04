@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Data</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Student Portal</div>
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Search by name or email"
+        oninput="handleSearch()"
+      />
+      <div class="buttons">
+        <button onclick="sortAZ()">Sort A-Z</button>
+        <button onclick="sortZA()">Sort Z-A</button>
+        <button onclick="sortByMarks()">Sort by Marks</button>
+        <button onclick="sortByPassing()">Sort by Passing</button>
+        <button onclick="sortByClass()">Sort by Class</button>
+        <button onclick="sortByGender()">Sort by Gender</button>
+      </div>
+      <table border="1" id="student-table">
+        <!-- Tables will be dynamically inserted here -->
+      </table>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
